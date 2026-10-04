@@ -1,0 +1,116 @@
+/* div {
+    background-color: aquamarine;
+    color: palevioletred;
+} */
+
+.name {
+    color: brown;
+    background-color: yellow;
+}
+
+#property {
+    color: purple;
+    background-color: blue;
+}
+
+div p { color: yellow;
+    background-color: black;
+
+}
+
+p h4 {background-color: bisque;
+    color: aqua;  }
+
+.work{
+    color: blue;
+    background-color: aliceblue;
+    margin: 40px;
+    width: 100px;
+    height: 500px;
+    background-color: pink;
+    padding: 20px 100px 500px 5px;
+
+    /* border-top: 10px solid black;
+    border-left: 5px double yellow;
+    border-right: 7px double orchid;
+    border-bottom: 12px dotted greenyellow; */
+
+    border-width: 12px;
+    border-color: 10px;
+    border-style: dotted;
+
+
+}
+
+.job {
+
+    background-color: teal;
+    height: 200px;
+    margin: 40px auto ;
+    width: 70%;
+    /* margin-top: 50px;
+    margin-bottom: 40px; */
+}
+
+.war {
+    color: palegreen;
+    background-color: black;
+    padding: 20px;
+margin: 40px;
+padding-top: 50px;
+padding-bottom: 10px;
+padding-left: 70px;
+padding-right: 30px;
+margin-top: 50px;
+margin-bottom: 10px;
+margin-right: 20px;
+margin-left: 30px;
+}
+
+.peace {
+color: red;
+background-color: aquamarine;
+height: 500px;
+width: 300px;
+border-top: ;
+}
+
+.hello {
+    
+    background-color: yellow;
+    margin: 40px;
+    border: 3px solid salmon;
+    outline: 10px solid red;
+    outline-offset: 20px;
+}
+
+.div1{ 
+    background-color: rgb(255,0,0);
+    background-color: #ab2245;
+    background-color: hsl(20, 90, 100);
+    height: 300px;
+    padding: 10px;
+    color: blue;
+}
+
+.div2 {
+
+    background-image: url(./img/pregnant-woman-watching-her-baby-on-the-ultrasound[1].jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.div3 { 
+    background-image: url(./img/vsc\ interface\ 1.png);
+    background: linear-gradient(to right,rgb(124, 114, 114, rgb(4, 112, 4)
+    )
+    );
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom right;
+margin: 30px;
+height: 300px;
+overflow: auto;
+color: chartreuse;
+}

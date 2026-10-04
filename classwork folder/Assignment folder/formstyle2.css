@@ -1,0 +1,21 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label, input, select {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 5px;
+    text-align: justify;
+    line-height: 2px;
+}
+
+h3 { 
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+     margin-bottom: 8px;
+    margin-top: 40px;
+    margin-left: 5px;
+}
