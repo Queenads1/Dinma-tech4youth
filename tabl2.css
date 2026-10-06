@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.div1 {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+
+ th, td {
+    border: 2px solid whitesmoke;
+    border-collapse: collapse;
+ }
+
+table {
+   width: 100%;
+   background-color: white;
+
+   
+}
+
+.th, td {
+ padding: 20px;
+ background-color: red;
+
+}
+
+th {
+     color: white;
+}
+
+td {
+  color: yellow;  
+}
+
+tr:nth-child(even) {
+    background-color: blue;
+}
+
+tr:nth-child(odd){
+    background-color: teal;
+}
+
+.th {
+    text-align: center;
+}
+
+
+
+
+
+ul{
+    background-color: white;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 4px 0 black;
+    border-radius: 0cm;
+    width: 50%;
+    list-style-position: inside;
+    list-style-type: circle;
+
+}
+
+ul li {
+    background-color: blue;
+     padding: 10px;
+    margin: 20px;
+}
+li:marker {
+    color: yellow;
+}
+
+.nav1 {
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 3px black;
+    color: white;
+    
+}
+
+.nav1 a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+a:visited {
+    color: brown;
+}
+
+a:link {
+    color: blue;
+}
+
+.all {
+    background-color: blue;
+    padding: 20px;
+    box-sizing: 0 0 3px black;
+}
+
+.logo img {
+width: 100%;
+border-radius: 20cm;
+}
+
+.box1{
+    background-color: red;
+    text-align: center;
+    height: 200px;
+    text-transform: uppercase;
+    color: white;
+    float: right;
+    line-height: 200px;
+    width: 20%;
+    box-sizing: 0 0 4px black;
+    margin: 20px solid black;
+}
+
+.box2{
+    background-color: purple;
+    text-align: center;
+    height: 200px;
+    text-transform: uppercase;
+    color: white;
+   line-height: 200px;
+    float: right;
+    width: 20%;
+}
+
+.box3{
+    background-color: teal;
+    text-align: center;
+    height: 200px;
+    text-transform: uppercase;
+    color: white;
+   line-height: 200px;
+    float: right;
+    width: 20%;
+}
+
+.box4{
+    background-color: orange;
+    text-align: center;
+    height: 200px;
+    text-transform: uppercase;
+    color: white;
+   line-height: 200px;
+    float: right;
+    width: 20%;
+}
+
+.box5{
+    background-color: yellowgreen;
+    text-align: center;
+    height: 200px;
+    text-transform: uppercase;
+    color: white;
+   line-height: 200px;
+    float: right;
+    width: 20%;
+}
+
+.box {
+   overflow: hidden;
+}

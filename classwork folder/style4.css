@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1 {
+    
+
+    /* background-image: linear-gradient(to right, rgba(128, 0, 128, 0.836)40%, rgba(0, 0, 255, 0.694)), url(img/debby-hudson-sgdyBq6kheQ-unsplash.jpg); */
+    background-image: linear-gradient(to right, rgba(224, 116, 60, 0.8)30%, rgba(90, 31, 192, 0.85)), url(img/debby-hudson-sgdyBq6kheQ-unsplash.jpg);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.gofan {
+    text-align: left;
+    margin: 30px 0 0 8%;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.nav1 {
+    position: absolute;
+     top: 38px;
+     right: 8%;
+     z-index: 5;
+}
+
+.nav1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.more {
+    font-size: 64px;
+    line-height: 1.15;
+    margin: 12vh auto 40vh;
+}
+
+.welcome {
+    background: linear-gradient(90deg #b03c9a #8a2be2);
+    font-size: 20px;
+    padding: 12px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box1, .box2, .box3 {
+    float: left;
+    width: 33.333%;
+   height: 250px;
+   padding-top: 50px;
+   font-size: 22px;
+   color: white;
+}
+
+.box1 {
+ background-image: linear-gradient(to right, rgba(232, 162, 28, 0.85)40%, rgba(224, 123, 26, 0.75)), url(img/courtney-innes-xHfyWX4Mw9E-unsplash.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+
+.box2 {
+    background-image: linear-gradient(to right, rgba(30, 27, 54, 0.9)40%, rgba(30, 27, 54, 0.75)), url(img/neelam279-roses-8247285.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+
+.box3{
+   background-image: linear-gradient(to right, rgba(31, 138, 42, 0.85)40%, rgba(47, 174, 58, 0.75)), url(img/7+\ Minimalist\ Master\ Bathroom\ Remodel\ Ideas\ for\ Clean\ Lines\ •\ ArtFasad.jpg);    
+    background-size: cover;
+    background-position: center;
+}
+
+.box4, .box5 {
+    float: left;
+    height: 300px;
+    padding-top: 70px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.box4 {
+    width: 60%;
+    background-image: linear-gradient(to right, rgba(201, 194, 224, 0.8)40%, rgba(185, 176, 221, 0.7)), url(img/jplenio-nature-3082832.jpg);  
+    background-size: cover;
+    background-position: center;
+}
+
+.box5{
+    width: 40%;
+    background-image: linear-gradient(to right, rgba(215, 143, 208, 0.85)40%, rgba(224, 112, 122, 0.75)), url(img/mael-gouyet-ArFqDroCnNs-unsplash.jpg);    
+    background-size: cover;
+    background-position: center;
+}

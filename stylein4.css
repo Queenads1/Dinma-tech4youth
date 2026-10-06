@@ -1,0 +1,101 @@
+ .cont{
+    position: relative;
+  }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fine { 
+    margin: 30px;
+    padding: 20px;
+width: 300px;
+height: 300px;
+background-color: teal;
+}
+
+.img {
+    border-radius: 50px;
+}
+
+.div6 {
+    background-color: yellowgreen;
+    color: aliceblue;
+    padding: 20px;
+    min-width: 500px;
+    max-width: 500px;
+max-height: 500px;
+}
+
+.div7 {
+    background-color: orange;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 3px 0 blue;
+    box-shadow: inset 0 0 7px 4px black;
+
+}
+
+.htag{
+    /* display: inline-block; */
+    margin: 30px;
+    opacity: 10;
+  }
+
+  .button{
+    background: transparent;
+    background-color: blue;
+  }
+
+ 
+  .box1 {
+    background-color: brown;
+    color: white;
+    font-size: 30px;
+    height: 10cm;
+    width: 20cm;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    line-height: 300px;
+    left: 200px;
+    right: auto;
+    bottom: 50px;
+    top: 10px;
+  }
+
+  .box2 {
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    height: 10cm;
+    width: 20cm;
+    text-align: center;
+    margin: 200px;
+    position: absolute;
+    line-height: 300px;
+    left: 200px;
+    right: auto;
+    bottom: 50px;
+    top: 100px;
+  }
+
+  .box3 {
+    background-color: pink;
+    color: white;
+    font-size: 30px;
+    height: 10cm;
+    width: 20cm;
+    text-align: center;
+    margin: 200px;
+    position: sticky;
+    line-height: 300px;
+    left: 200px;
+    right: auto;
+    bottom: 50px;
+    top: 100px;
+  }
