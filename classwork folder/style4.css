@@ -89,14 +89,14 @@ body {
 }
 
 .box4 {
-    width: 60%;
+    width: 66.66%;
     background-image: linear-gradient(to right, rgba(201, 194, 224, 0.8)40%, rgba(185, 176, 221, 0.7)), url(img/jplenio-nature-3082832.jpg);  
     background-size: cover;
     background-position: center;
 }
 
 .box5{
-    width: 40%;
+    width: 33.33%;
     background-image: linear-gradient(to right, rgba(215, 143, 208, 0.85)40%, rgba(224, 112, 122, 0.75)), url(img/mael-gouyet-ArFqDroCnNs-unsplash.jpg);    
     background-size: cover;
     background-position: center;

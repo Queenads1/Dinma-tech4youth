@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL:BLOG</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="propro.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+   
+</head>
+<body>
+
+  <header class="header">
+       
+        <h1 class="logo"> <span style="color: rgb(218, 112, 183);">T</span>RAVEL</h1>  
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+
+            <div class="icon">
+
+            <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#account"><i class="fa-solid fa-user"></i></a>
+
+            <!-- <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button> -->
+        </div>
+
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="hero-content">
+            <h1>ADVENTURE IS WORTHWHILE</h1>
+            <p>Discover New Places With Us, Adventure Awaits</p>
+            <a href="#book" class="btn">Discover More</a>
+        </div>
+
+        <div class="controls">
+            
+            <button class="dot active" aria-label="Slide 1"></button>
+            <button class="dot" aria-label="Slide 2"></button>
+            <button class="dot" aria-label="Slide 3"></button>
+            <button class="dot" aria-label="Slide 4"></button>
+            <button class="dot" aria-label="Slide 5"></button>
+        </div>
+
+    </section>
+
+    <section class="book-section" id="book">
+
+        <h2 class="heading">
+            <span>B</span>
+            <span>O</span>
+            <span>O</span>
+            <span>K</span>
+            <span>N</span>
+            <span>O</span>
+            <span>W</span>
+        </h2>
+
+        <div class="book-row">
+
+            <div class="book-image">
+                <img
+                    src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1000&q=85"
+                    alt="Travel essentials">
+            </div>
+
+            <form class="booking-form">
+
+                <label for="destination">Where To</label>
+                <input
+                    type="text"
+                    id="destination"
+                    placeholder="place name"
+                    required>
+
+                <label for="guests">How Many</label>
+                <input
+                    type="number"
+                    id="guests"
+                    min="1"
+                    placeholder="number of guests"
+                    required>
+
+                <label for="arrivals">Arrivals</label>
+                <input
+                    type="date"
+                    id="arrivals"
+                    required>
+
+                <label for="leaving">Leaving</label>
+                <input
+                    type="date"
+                    id="leaving"
+                    required>
+
+                <button type="submit" class="btn">Book Now</button>
+
+                <p class="form-message" id="form-message"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- PACKAGES SECTION -->
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>S</span>
+        </h1>
+
+
+        <div class="box-container">
+
+            <!-- MUMBAI -->
+            <div class="box">
+                <img
+                    src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=900&q=85"
+                    alt="Gateway of India in Mumbai">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Mumbai
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- HAWAII -->
+            <div class="box">
+                <img
+                    src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=85"
+                    alt="Beautiful turquoise lake and mountains">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Hawaii
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- SYDNEY -->
+            <div class="box">
+                <img
+                    src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=900&q=85"
+                    alt="Sydney city skyline">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Sydney
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- PARIS -->
+            <div class="box">
+                <img
+                    src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85"
+                    alt="Paris and the Eiffel Tower">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Paris
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- TOKYO -->
+            <div class="box wide-card">
+                <img
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85"
+                    alt="Japanese pagoda and Mount Fuji">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Tokyo
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+
+            <!-- EGYPT -->
+            <div class="box wide-card">
+                <img
+                    src="https://tourtravelbooking.netlify.app/images/p-6.jpg"
+                    alt="Ancient Egyptian pyramids">
+
+                <div class="content">
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Egypt
+                    </h3>
+
+                    <p>
+                        Lorem Ipsum Dolor Sit Amet Consectetur
+                        Adipisicing Elit. Veritatis, Nam!
+                    </p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+
+                    <div class="price">
+                        $90.00 <span>$120.00</span>
+                    </div>
+
+                    <a href="#book" class="btn">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+
+        <h1 class="section-heading">
+            <span>S</span><span>E</span><span>R</span><span>V</span>
+            <span>I</span><span>C</span><span>E</span><span>S</span>
+        </h1>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food And Drinks</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety Guide</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around The World</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-plane"></i>
+                <h3>Fastest Travel</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+            <div class="service-box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>
+                    Lorem Ipsum Dolor Sit Amet Consectetur,
+                    Adipisicing Elit. Inventore Commodi Earum,
+                    Quis Voluptate Exercitationem Ut Minima
+                    Itaque Iusto Ipsum Corrupti!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+
+        <h1 class="section-heading">
+            <span>G</span><span>A</span><span>L</span><span>L</span>
+            <span>E</span><span>R</span><span>Y</span>
+        </h1>
+
+        <div class="gallery-container">
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=85"
+                     alt="Beautiful tropical island">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=85"
+                     alt="Tropical beach and clear water">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=85"
+                     alt="Historic architecture in Rome">
+            </div>
+
+            <div class="gallery-box">
+                <img src="../img/young-happy-woman-with-backpack-raising-hand-enjoy-with-nature.jpg"
+                     alt="Travel destination and historic temple">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=85"
+                     alt="Italian coastal destination">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=85"
+                     alt="Traveler enjoying a scenic landscape">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=800&q=85"
+                     alt="Hot air balloon travel adventure">
+            </div>
+
+            <div class="gallery-box">
+                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=85"
+                     alt="Camping beside a beautiful lake">
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- REVIEW SECTION -->
+<section class="review" id="review">
+
+    <h1 class="section-heading">
+        <span>R</span><span>E</span><span>V</span>
+        <span>I</span><span>E</span><span>W</span>
+    </h1>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                 alt="John Deo">
+            <h3>John Doe</h3>
+            <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur
+                Adipisicing Elit. Ipsa Adipisci Quisquam
+                Suscipit Fugiat Odit Minus Illum Asperiores
+                Dolorum Sint Quidem Quod Ipsam Distinctio
+                Molestias Consectetur Omnis Beatae,
+                Reprehenderit Exercitationem!
+            </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                 alt="John Deo">
+            <h3>Queen Doe</h3>
+            <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur
+                Adipisicing Elit. Ipsa Adipisci Quisquam
+                Suscipit Fugiat Odit Minus Illum Asperiores
+                Dolorum Sint Quidem Quod Ipsam Distinctio
+                Molestias Consectetur Omnis Beatae,
+                Reprehenderit Exercitationem!
+            </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg"
+                 alt="John Deo">
+            <h3>John Deo</h3>
+            <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur
+                Adipisicing Elit. Ipsa Adipisci Quisquam
+                Suscipit Fugiat Odit Minus Illum Asperiores
+                Dolorum Sint Quidem Quod Ipsam Distinctio
+                Molestias Consectetur Omnis Beatae,
+                Reprehenderit Exercitationem!
+            </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+
+    <h1 class="section-heading">
+        <span>C</span><span>O</span><span>N</span>
+        <span>T</span><span>A</span><span>C</span><span>T</span>
+    </h1>
+
+    <div class="contact-container">
+
+        <div class="contact-image">
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+                alt="Airplane travelling around the world">
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+
+            <div class="input-box">
+                <input type="text" name="name"
+                       placeholder="name" required>
+
+                <input type="email" name="email"
+                       placeholder="email" required>
+            </div>
+
+            <div class="input-box">
+                <input type="tel" name="number"
+                       placeholder="number">
+
+                <input type="text" name="subject"
+                       placeholder="subject">
+            </div>
+
+            <textarea name="message"
+                      placeholder="message"
+                      required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>
+                Lorem Ipsum Dolor Sit Amet Consectetur
+                Adipisicing Elit. Assumenda Quas Magni
+                Pariatur Est Accusantium Voluptas Enim
+                Nemo Facilis Sit Debitis.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Branch Locations</h3>
+            <a href="#">Nigeria</a>
+            <a href="#">USA</a>
+            <a href="#">Germany</a>
+            <a href="#">Australia</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Me</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkedin</a>
+        </div>
+
+    </div>
+
+    <div class="footer-credit">
+        Created By <span>Queen Chidimma</span> | All Rights Reserved!
+    </div>
+
+</footer>
+
+
+
+
+</body>
+</html>

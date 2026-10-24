@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-color: red;
+    height: 200px;
+    width: 300px;
+    margin: 30px;
+    transition: all ease-in 0.5s;
+
+}
+
+.box1:hover {
+    background-color: blue;
+    margin-left: 200px;
+}
+
+.nav1 {
+    background-color: teal;
+    padding: 10px;
+}
+
+.nav1 a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: all ease-in-out 2s;
+    display: block ;
+}
+
+.nav1 a:hover {
+    color: red;
+    background-color: white;
+
+}
+
+.div2 div {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px;
+    transition: width 2s;
+}
+
+#div1 {
+    transition-timing-function: ease-in;
+}
+
+#div2 {
+    transition-timing-function: ease-out;
+}
+
+#div3 {
+    transition-timing-function: ease-in-out;
+}
+
+#div4 {
+    transition-timing-function: linear;
+}
+
+.div2 div:hover {
+    width: 300px;
+    /* position: absolute;
+    left: 200px; */
+}
+
+
+.box2 {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transform: rotate(20deg);
+    color: white;
+    line-height: 200px;
+    margin: 30px;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+.box2:hover {
+    transform: rotate(360deg);
+}
+
+.box5:hover {
+    transform: rotateX(30deg);
+}
+
+.box5 {
+    background-color: orchid;
+    height: 200px;
+    width: 200px;
+    color: white;
+    line-height: 200px;
+    margin: 30px;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+.box3 {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    transform: rotate(20deg);
+    margin: 200px;
+    color: white;
+    text-align: center;
+    transition: all 1.5s ease-in-out;
+}
+
+.box3:hover:hover {
+    transform: skew(60deg);
+}
+
+.box4 {
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transform: rotate(20deg);
+    margin: 200px;
+    text-align: center;
+    transition: all 2s ease-in-out;
+}
+
+.box4:hover{
+    transform: scale(5,3)
+}
+
+ 
+.form {
+    background-color: gray;
+    padding: 30px;
+}
+
+.form2 {
+    background-color: rgba(255, 0, 0, 0.782);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -100px;
+}
+
+.form2 .inputs {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: blue;
+   background: transparent;
+   border-bottom: 3px solid white ;
+   font-size: 20px;
+   transition: all 1.3secs ease-in-out;
+}
+
+.form2 h1 {
+    color: white;
+    text-align: center;
+}
+
+.form2 .inputs::placeholder{
+    color: blue;
+}
+.form2 input:focus::placeholder{
+    opacity: 0;
+}
+
+.form2 input:focus{
+    box-shadow: 0 0 3px 4px pink;
+}
+
+.form2 button {
+    border: 0;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btns {
+    margin-top: 30px;
+
+}
+
+.form2 span {
+    color: white;
+
+}
+
+.box6 {
+    /* background-color: green; */
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: infinite; */
+    position: relative;
+    
+}
+
+@keyframes box{
+    from{background-color: green;}
+    to{background-color: red;}
+}
+
+@keyframes box2{
+0%{
+    background-color: yellow; left: 200px; top: 0;
+}
+50%{ background-color: red; left: 0; top: 300px;}
+
+100% { background-color: teal; left: 0; top: 0;}
+}
