@@ -124,7 +124,40 @@ window.alert ("Helo world")
 // let number = Number(prompt("Enter a number:"));
 
 
-for (let i = 1; i <= 12; i++) {
-    console.log(number + " x " + i + " = " + (number * i));
+// for (let i = 1; i <= 12; i++) {
+//     console.log(number + " x " + i + " = " + (number * i));
+// }
+
+// FUNCTIONS
+
+function greeting() {
+    console.log("Good money this morning")
 }
+
+greeting()
+
+function greet(){
+    return "Today is monday"
+}
+
+console.log(greet())
+
+// let myfun = fun(),{
+//     ,console.log("anonymous function")
+    
+// }
+
+function sum(a,b){
+    console.log(a + b)
+}
+
+sum(1, 21)
+
+sum(10, 20)
+
+// function getDetails(firstname, lastname, occupation, country){
+// return "My name is" + firstname + "" + lastname + "" + occupation + "" + country}
+
+// console.log(getDetails("queen, "dinma", ))
+
 

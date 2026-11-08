@@ -443,7 +443,7 @@ section {
     color: #df6bd5;
     padding: 1rem;
 align-items: center;
-    margin-bottom: 10px;
+    margin: 0 auto 20px;
 }
 
 .service-box h3 {
@@ -751,6 +751,498 @@ align-items: center;
     color: #df6bd5;
 }
 
+
+
+
+/* RESPONSIVE DESIGN FOR TRAVEL WEBSITE
+   */
+
+/* Prevent unwanted horizontal scrolling */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   TABLETS: 768px - 1024px
+   ========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    /* Header and navigation */
+    .header {
+        padding: 15px 4%;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .header .logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar {
+        gap: 14px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .icon {
+        gap: 15px;
+        font-size: 1.2rem;
+    }
+
+    /* General section spacing */
+    section,
+    .book-section,
+    .services,
+    .gallery,
+    .review,
+    .contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Booking section */
+    .book-row {
+        gap: 25px;
+    }
+
+    .book-image img {
+        height: 330px;
+    }
+
+    /* Packages: four columns become two */
+    .packages .box-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .packages .box-container .box .content {
+        padding: 18px;
+    }
+
+    .packages .box-container .box .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .packages .box-container .box .content p {
+        font-size: 1rem;
+    }
+
+    /* Services: four columns become two */
+    .services-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .service-box:nth-child(5),
+    .service-box:nth-child(6) {
+        grid-column: auto;
+    }
+
+    /* Gallery: four columns become two */
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-box img {
+        height: 210px;
+    }
+
+    /* Reviews */
+    .review-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+
+
+/* =========================================
+   MOBILE PHONES: 767px AND BELOW
+   ========================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* Header */
+    .header {
+        padding: 12px 5%;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .header .logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        gap: 10px 18px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        justify-content: center;
+        gap: 20px;
+        font-size: 1.2rem;
+    }
+
+    /* Hero section */
+    .home {
+        min-height: 75vh;
+        height: auto;
+        padding: 70px 5%;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+        line-height: 1.25;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+
+    .controls {
+        bottom: 5%;
+        gap: 8px;
+        padding: 10px 14px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* General section spacing */
+    section,
+    .book-section,
+    .services,
+    .gallery,
+    .review,
+    .contact {
+        padding: 35px 5%;
+    }
+
+    /* Section headings */
+    .heading,
+    .section-heading {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .heading {
+        gap: 3px;
+        margin-bottom: 25px;
+    }
+
+    .heading span {
+        font-size: 1.35rem;
+        padding: 2px 5px;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+        gap: 4px;
+        margin-bottom: 25px;
+    }
+
+    .section-heading span {
+        width: 27px;
+        height: 33px;
+    }
+
+    /* Booking section: stack image and form */
+    .book-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .book-image,
+    .booking-form {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .book-image img {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    .booking-form {
+        padding: 20px 15px;
+    }
+
+    .booking-form label {
+        font-size: 0.95rem;
+    }
+
+    /* Packages: one card per row */
+    .packages .box-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+    .packages .box-container .wide-card {
+        grid-column: auto;
+    }
+
+    .packages .box-container .box img {
+        height: 230px;
+    }
+
+    .packages .box-container .box .content {
+        padding: 20px;
+    }
+
+    .packages .box-container .box .content h3 {
+        font-size: 1.25rem;
+    }
+
+    .packages .box-container .box .content p {
+        font-size: 0.95rem;
+    }
+
+    .packages .box-container .box .content .stars i {
+        font-size: 1.2rem;
+    }
+
+    .packages .box-container .box .content .price {
+        font-size: 1.3rem;
+    }
+
+    /* Services: one centred feature per row */
+    .services-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+    }
+
+    .service-box {
+        width: 100%;
+        padding: 0 10px;
+        transform: none;
+        text-align: center;
+    }
+
+    .service-box:nth-child(5),
+    .service-box:nth-child(6) {
+        grid-column: auto;
+    }
+
+    .service-box i {
+        display: block;
+        font-size: 35px;
+        padding: 10px;
+        margin: 0 auto 12px;
+    }
+
+    .service-box h3 {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+    }
+
+    .service-box p {
+        max-width: 350px;
+        margin: 0 auto;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    /* Gallery: two images per row */
+    .gallery-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .gallery-box {
+        padding: 5px;
+    }
+
+    .gallery-box img {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* Reviews: one card per row */
+    .review-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .review-card {
+        padding: 22px 18px;
+    }
+
+    .review-card img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .review-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .review-card p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    /* Contact section */
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .contact-image,
+    .contact-form {
+        width: 100%;
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .contact-image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .contact-form .input-box {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-form .input-box input {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .contact .section-heading {
+        margin-bottom: 30px;
+    }
+
+    /* Footer: two columns on mobile */
+    .footer {
+        padding: 35px 5% 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 18px;
+    }
+
+    .footer-box h3 {
+        font-size: 1rem;
+    }
+
+    .footer-box p,
+    .footer-box a {
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-credit {
+        font-size: 0.8rem;
+        line-height: 1.7;
+        padding-top: 15px;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES: 400px AND BELOW
+   ========================================= */
+
+@media screen and (max-width: 400px) {
+
+    .header {
+        padding: 12px 3%;
+    }
+
+    .navbar {
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 0.82rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .heading span {
+        font-size: 1.1rem;
+        padding: 2px 4px;
+    }
+
+    .gallery-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .gallery-box img {
+        height: 210px;
+    }
+
+    .footer-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .packages .box-container .box img {
+        height: 210px;
+    }
+}
 
 
 

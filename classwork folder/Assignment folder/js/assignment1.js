@@ -82,113 +82,113 @@ let units = (unitsInput);
 }
 
 // option 2
-let name = prompt("Enter customer name:");
-let unitsInput = prompt("Enter units consumed:");
-let units = Number(unitsInput);
+// let name = prompt("Enter customer name:");
+// let unitsInput = prompt("Enter units consumed:");
+// let units = Number(unitsInput);
 
-if (name === null || name.trim() === "") {
-    console.log("Invalid customer name");
-} else if (
-    unitsInput === null ||
-    unitsInput.trim() === "" ||
-    !Number.isFinite(units) ||
-    units < 0
-) {
-    console.log("Invalid units");
-} else {
-    let rate;
+// if (name === null || name.trim() === "") {
+//     console.log("Invalid customer name");
+// } else if (
+//     unitsInput === null ||
+//     unitsInput.trim() === "" ||
+//     !Number.isFinite(units) ||
+//     units < 0
+// ) {
+//     console.log("Invalid units");
+// } else {
+//     let rate;
 
-    if (units <= 100) {
-        rate = 50;
-    } else if (units <= 200) {
-        rate = 75;
-    } else {
-        rate = 100;
-    }
+//     if (units <= 100) {
+//         rate = 50;
+//     } else if (units <= 200) {
+//         rate = 75;
+//     } else {
+//         rate = 100;
+//     }
 
-    let bill = units * rate;
+//     let bill = units * rate;
 
-    console.log("Customer: " + name);
-    console.log("Units consumed: " + units);
-    console.log("Rate per unit: ₦" + rate);
-    console.log("Total bill: ₦" + bill);
-}
+//     console.log("Customer: " + name);
+//     console.log("Units consumed: " + units);
+//     console.log("Rate per unit: ₦" + rate);
+//     console.log("Total bill: ₦" + bill);
+// }
 
 // assignment 4
 
-let username = prompt("Enter your username:");
-let password = prompt("Enter your password:");
+// let username = prompt("Enter your username:");
+// let password = prompt("Enter your password:");
 
-if (
-    username === null ||
-    password === null ||
-    username.trim() === "" ||
-    password.trim() === ""
-) {
-    console.log("Invalid username and password");
-} else if (username === "admin" && password === "12345") {
-    console.log("Login successful. Welcome, Admin!");
+// if (
+//     username === null ||
+//     password === null ||
+//     username.trim() === "" ||
+//     password.trim() === ""
+// ) {
+//     console.log("Invalid username and password");
+// } else if (username === "admin" && password === "12345") {
+//     console.log("Login successful. Welcome, Admin!");
 
-    let role = prompt("Enter your role: admin or editor");
+//     let role = prompt("Enter your role: admin or editor");
 
-    if (role === null) {
-        console.log("Access denied");
-    } else if (role.trim().toLowerCase() === "admin") {
-        console.log("Full access granted");
-    } else if (role.trim().toLowerCase() === "editor") {
-        console.log("Editing access granted");
-    } else {
-        console.log("Access denied");
-    }
-} else if (username === "admin") {
-    console.log("Username not found");
-} else if (password === "12345") {
-    console.log("Incorrect password");
-} else {
-    console.log("Invalid username and password");
-} 
+//     if (role === null) {
+//         console.log("Access denied");
+//     } else if (role.trim().toLowerCase() === "admin") {
+//         console.log("Full access granted");
+//     } else if (role.trim().toLowerCase() === "editor") {
+//         console.log("Editing access granted");
+//     } else {
+//         console.log("Access denied");
+//     }
+// } else if (username === "admin") {
+//     console.log("Username not found");
+// } else if (password === "12345") {
+//     console.log("Incorrect password");
+// } else {
+//     console.log("Invalid username and password");
+// } 
 
 // assignment 5
 
-let name = prompt("Enter customer name:");
-let amountInput = prompt("Enter purchase amount:");
-let typeInput = prompt("Enter customer type: regular or premium");
+// let name = prompt("Enter customer name:");
+// let amountInput = prompt("Enter purchase amount:");
+// let typeInput = prompt("Enter customer type: regular or premium");
 
-let amount = Number(amountInput);
-let type = typeInput === null ? "" : typeInput.trim().toLowerCase();
+// let amount = Number(amountInput);
+// let type = typeInput === null ? "" : typeInput.trim().toLowerCase();
 
-if (name === null || name.trim() === "") {
-    console.log("Invalid customer name");
-} else if (
-    amountInput === null ||
-    amountInput.trim() === "" ||
-    !Number.isFinite(amount) ||
-    amount < 0
-) {
-    console.log("Invalid purchase amount");
-} else if (type !== "regular" && type !== "premium") {
-    console.log("Invalid customer type");
-} else {
-    let discount = 0;
+// if (name === null || name.trim() === "") {
+//     console.log("Invalid customer name");
+// } else if (
+//     amountInput === null ||
+//     amountInput.trim() === "" ||
+//     !Number.isFinite(amount) ||
+//     amount < 0
+// ) {
+//     console.log("Invalid purchase amount");
+// } else if (type !== "regular" && type !== "premium") {
+//     console.log("Invalid customer type");
+// } else {
+//     let discount = 0;
 
-    if (amount >= 100000) {
-        discount = 15;
-    } else if (amount >= 50000) {
-        discount = 10;
-    } else if (amount >= 10000) {
-        discount = 5;
-    }
+//     if (amount >= 100000) {
+//         discount = 15;
+//     } else if (amount >= 50000) {
+//         discount = 10;
+//     } else if (amount >= 10000) {
+//         discount = 5;
+//     }
 
-    if (type === "premium" && amount >= 10000) {
-        discount = discount + 5;
-    }
+//     if (type === "premium" && amount >= 10000) {
+//         discount = discount + 5;
+//     }
 
-    let discountAmount = amount * discount / 100;
-    let finalAmount = amount - discountAmount;
+//     let discountAmount = amount * discount / 100;
+//     let finalAmount = amount - discountAmount;
 
-    console.log("Customer: " + name);
-    console.log("Original amount: ₦" + amount);
-    console.log("Discount: " + discount + "%");
-    console.log("Discount amount: ₦" + discountAmount);
-    console.log("Final amount to pay: ₦" + finalAmount);
-}
+//     console.log("Customer: " + name);
+//     console.log("Original amount: ₦" + amount);
+//     console.log("Discount: " + discount + "%");
+//     console.log("Discount amount: ₦" + discountAmount);
+//     console.log("Final amount to pay: ₦" + finalAmount);
+// }
